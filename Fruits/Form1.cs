@@ -64,7 +64,7 @@ namespace Fruits
                 {
                     foreach (Fruit item in lbFruits.Items)
                     {
-                        myStream.Write(item.Totxt());
+                        myStream.WriteLine(item.Totxt());
                     }
                     myStream.Flush();
                 }
