@@ -87,7 +87,7 @@ namespace Fruits
                     while (!sr.EndOfStream) 
                     {
                         string[] line = sr.ReadLine().Split(';');
-                        Fruit newFruit = new Fruit(ulong.Parse(line[0]), line[1], int.Parse(line[2]));
+                        Fruit newFruit = new Fruit(line[0], line[1], int.Parse(line[2]));
                         lbFruits.Items.Add(newFruit);
                     }
                 }

@@ -49,7 +49,8 @@ namespace Fruits
 
         private void newFruit()
         {
-            ulong id = (ulong)(Program.indexForm.lbFruits.Items.Count + 1);
+            Random rnd = new Random();
+            string id = Convert.ToString(rnd.Next(1000000, 2000000));
             if (String.IsNullOrEmpty(tbName.Text))
             {
                 MessageBox.Show("Missing Name");
@@ -69,7 +70,7 @@ namespace Fruits
 
         private void Update()
         {
-            ulong id = ulong.Parse(tbId.Text);
+            string id = tbId.Text;
             if (String.IsNullOrEmpty(tbName.Text))
             {
                 MessageBox.Show("Missing Name");

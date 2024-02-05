@@ -8,15 +8,15 @@ namespace Fruits
 {
     internal class Fruit
     {
-        private ulong id;
+        private string id;
         private string name;
         private int quantity;
 
-        public ulong Id { get => id; set => id = value; }
+        public string Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public int Quantity { get => quantity; set => quantity = value; }
 
-        public Fruit(ulong id, string name, int quantity)
+        public Fruit(string id, string name, int quantity)
         {
             Id = id;
             Name = name;
